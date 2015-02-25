@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Customize checkboxes and radio with css</title>
+	<style type="text/css">
+		@import url("customizeCheckboxRadio.css") all;
+	</style>
+</head>
+<body>
+	<form action="#" method="get">
+		<fieldset class="radio">
+			<legend>Quel fruit préférez-vous ?</legend>
+			<div class="wrapField">
+				<input type="radio" value="fraise" name="fruits" id="fraise">
+				<label for="fraise">Fraise</label>
+			</div>
+			<div class="wrapField">
+				<input type="radio" value="abricot" name="fruits" id="abricot">
+				<label for="abricot">Abricot</label>
+			</div>
+			<div class="wrapField">
+				<input type="radio" value="kiwi" name="fruits" id="kiwi">
+				<label for="kiwi">Kiwi</label>
+			</div>
+		</fieldset>
+
+		<fieldset class="checkbox">
+			<legend>Quel(s) légume(s) préférez-vous ?</legend>
+			<div class="wrapField">
+				<input type="checkbox" value="Haricot vert" name="haricot" id="haricot">
+				<label for="haricot">Haricot vert</label>
+			</div>
+			<div class="wrapField">
+				<input type="checkbox" value="Pomme de terre" name="pdt" id="pdt">
+				<label for="pdt">Pomme de terre</label>
+			</div>
+			<div class="wrapField">
+				<input type="checkbox" value="Courgette" name="courgette" id="courgette">
+				<label for="courgette">Courgette</label>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

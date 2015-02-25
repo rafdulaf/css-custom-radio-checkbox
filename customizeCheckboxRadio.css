@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: arial, helvetica, verdana, sans-serif;
+  padding: 2em;
+}
+fieldset {
+  padding: 2em;
+  margin-bottom: 2em;
+}
+legend {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0 1em;
+}
+.wrapField {
+  margin-bottom: 0.5em;
+}
+/* Checkbox */
+.checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.92308em;
+  margin-right: 1.15385em;
+  font-size: 1.3em;
+  border: 1px dotted transparent;
+  color: #656565;
+  text-transform: none;
+}
+.checkbox label:before {
+  content: "";
+  font-size: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 0.76923em;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background-color: #fff;
+  border: 2px solid #d2d2d2;
+  line-height: 1em;
+}
+.checkbox label:before:disabled {
+  border-color: #e2e2e2;
+}
+.checkbox label:after {
+  content: "";
+  background: none;
+}
+input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+input[type=checkbox]:checked + label:before {
+  content: "✔";
+  color: #000;
+  text-align: center;
+}
+input[type=checkbox]:disabled + label:before {
+  border: 1px solid #000;
+  color: #777;
+  cursor: default;
+}
+input[type=checkbox]:disabled + label {
+  cursor: default;
+  color: #777;
+}
+input[type=checkbox]:focus + label {
+  outline: 1px dotted #000;
+}
+.ie8 .checkbox label,
+.ie7 .checkbox label {
+  padding: 0;
+}
+.ie8 .checkbox label:before,
+.ie7 .checkbox label:before {
+  border: none;
+  content: "";
+  font-size: 0;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+.ie8 input[type=checkbox],
+.ie7 input[type=checkbox] {
+  position: inherit;
+  left: inherit;
+}
+/* radio */
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.78571em;
+  margin-right: 1.07143em;
+  font-size: 1.4em;
+  border: 1px dotted transparent;
+  color: #656565;
+  text-transform: none;
+}
+.radio label:before {
+  border-radius: 1em;
+  font-size: 2.5em;
+  line-height: .48em;
+  content: "";
+  display: inline-block;
+  width: .4em;
+  height: .4em;
+  margin-right: .4em;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background-color: #fff;
+  border: 2px solid #d2d2d2;
+}
+.radio label:after {
+  content: none;
+  background: none;
+}
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+input[type=radio]:checked + label:before {
+  content: "•";
+  color: #000;
+  text-align: center;
+}
+input[type=radio]:disabled + label:before {
+  border: 1px solid #e2e2e2;
+  color: #777;
+  cursor: default;
+}
+input[type=radio]:disabled + label {
+  cursor: default;
+  color: #777;
+}
+input[type=radio]:focus + label {
+  outline: 1px dotted #000;
+}
+.ie78 .radio label {
+  padding: 0;
+}
+.ie78 .radio label:before {
+  width: auto;
+  height: auto;
+  margin: auto;
+  border: none;
+}
+.ie8 input[type=radio],
+.ie7 input[type=radio] {
+  position: inherit;
+  left: inherit;
+}
